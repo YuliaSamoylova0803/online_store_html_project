@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Категория</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .full-height {
+            min-height: 100vh; /* Высота на весь экран */
+            background-color: black; /* Чёрный фон */
+            color: white; /* Белый текст */
+            padding: 20px; /* Отступы внутри колонки */
+        }
+        .card-header-custom {
+            background-color: #6c757d; /* Серый фон для заголовка карточки */
+            color: white; /* Белый текст */
+        }
+        .user-section {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+        }
+        .user-section img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .menu-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .menu-icon {
+            background-color: white; /* Белый фон для значка */
+            color: black; /* Чёрный текст */
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; /* Круглый значок */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .menu-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .menu-divider {
+            border-bottom: 1px solid white; /* Черта под меню */
+            margin-bottom: 20px;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрирование по горизонтали */
+            text-align: center; /* Центрирование текста */
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрирование по горизонтали */
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Левая колонка с меню -->
+        <div class="col-sm-3 full-height position-relative">
+            <!-- Значок "B" на белом фоне и надпись "Меню" -->
+            <div class="menu-header">
+                <div class="menu-icon">B</div>
+                <div class="menu-title">Меню</div>
+            </div>
+
+            <!-- Черта под меню -->
+            <div class="menu-divider"></div>
+
+            <!-- Меню -->
+            <div class="card bg-transparent border-0">
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item active" aria-current="true">Главная</li>
+                        <li class="list-group-item text-white bg-transparent border-0">Категории</li>
+                        <li class="list-group-item text-white bg-transparent border-0">Заказы</li>
+                        <li class="list-group-item text-white bg-transparent border-0">Контакты</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Кнопка "Пользователь" с выпадающим списком и картинкой -->
+            <div class="user-section">
+                <img src="https://avatars.mds.yandex.net/i?id=b7c6e08165acafe3f685613139c93f1c_sr-4865125-images-thumbs&n=13" alt="User Icon"> <!-- Замените на путь к вашей картинке -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Пользователь
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Профиль</a></li>
+                        <li><a class="dropdown-item" href="#">Выход</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Правая колонка с контентом -->
+        <div class="col-sm-9">
+            <h1 class="text-center mt-5">Категория 1</h1>
+
+            <div class="row">
+                <div class="col-4 col-sm-4 mt-5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header card-header-custom w-100">
+                            Товар 1
+                        </div>
+                        <div class="card-body">
+                            <h1>$ 100</h1>
+                            <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access.</p>
+                            <button type="submit" class="btn btn-outline-primary w-100">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-4 mt-5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header card-header-custom w-100">
+                            Товар 1
+                        </div>
+                        <div class="card-body">
+                            <h1>$ 100</h1>
+                            <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access.</p>
+                            <button type="submit" class="btn btn-outline-primary w-100">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-4 mt-5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header card-header-custom w-100">
+                            Товар 1
+                        </div>
+                        <div class="card-body">
+                            <h1>$ 100</h1>
+                            <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access.</p>
+                            <button type="submit" class="btn btn-outline-primary w-100">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-4 mt-5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header card-header-custom w-100">
+                            Товар 1
+                        </div>
+                        <div class="card-body">
+                            <h1>$ 100</h1>
+                            <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access.</p>
+                            <button type="submit" class="btn btn-outline-primary w-100">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-4 mt-5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header card-header-custom w-100">
+                            Товар 1
+                        </div>
+                        <div class="card-body">
+                            <h1>$ 100</h1>
+                            <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access.</p>
+                            <button type="submit" class="btn btn-outline-primary w-100">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-4 mt-5">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header card-header-custom w-100">
+                            Товар 1
+                        </div>
+                        <div class="card-body">
+                            <h1>$ 100</h1>
+                            <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access.</p>
+                            <button type="submit" class="btn btn-outline-primary w-100">Купить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Подключение Bootstrap JS (для работы выпадающего списка) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
