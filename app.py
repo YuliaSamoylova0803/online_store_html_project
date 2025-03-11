@@ -12,7 +12,7 @@ class MyServer(BaseHTTPRequestHandler):
     """
 
     def do_GET(self):
-        """ Метод для обработки входящих GET-запросов """
+        """Метод для обработки входящих GET-запросов"""
 
         try:
             # Открываем файл contacts.html для чтения
@@ -23,12 +23,14 @@ class MyServer(BaseHTTPRequestHandler):
             content = "<html><body><h1>Ошибка: Файл contacts.html не найден</h1></body></html>"
 
         self.send_response(200)  # Отправка кода ответа
-        self.send_header("Content-type", "text/html")  # Отправка типа данных, который будет передаваться
+        self.send_header(
+            "Content-type", "text/html"
+        )  # Отправка типа данных, который будет передаваться
         self.end_headers()  # Завершение формирования заголовков ответа
         self.wfile.write(bytes(content, "utf-8"))  # Тело ответа
 
     def do_POST(self):
-        """ Метод для обработки входящих POST-запросов """
+        """Метод для обработки входящих POST-запросов"""
         # Получаем длину тела запроса
         content_length = int(self.headers["Content-Length"])
         # Читаем тело запроса
